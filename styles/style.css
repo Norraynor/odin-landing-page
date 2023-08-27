@@ -1,3 +1,7 @@
+
+.header,.main-text{
+    padding: 0 10vw;
+}
 .dark-background{
     background-color: #1f2937;
 }
@@ -16,9 +20,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 32px;
 }
 .header-logo{
     font-size: 24px;
+    font-weight: bold;
     color: #f9faf8;
 }
 .header-info{
@@ -27,11 +33,14 @@
     color: #1f2937
 }
 
-.button{
-    color: #3882f6
+button{
+    color: #f9faf8;
+    padding: 8px 16px;
+    border-radius: 10%;
+    border: 0;
 }
 
-.cta-background{
+.cta-background,button{
     background-color: #3882f6;
 }
 
@@ -50,4 +59,24 @@ ul{
     padding: 0;
     display: flex;
     gap: 32px;
+}
+
+.main-text{
+    display: flex;
+    padding-bottom: 32px;
+}
+.left-side{
+    flex: 1;
+}
+.right-side{
+    flex: 1;
+    background-color: #696969;
+    width: 100%;
+    height: auto;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
