@@ -1,6 +1,7 @@
 
-.header,.main-text{
+.header,.main-text,.information,.quote{
     padding: 0 10vw;
+    padding-bottom: 64px;
 }
 .dark-background{
     background-color: #1f2937;
@@ -20,7 +21,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 32px;
 }
 .header-logo{
     font-size: 24px;
@@ -30,7 +30,8 @@
 .header-info{
     font-size: 36px;
     font-weight: 800;
-    color: #1f2937
+    color: #1f2937;
+    padding: 32px 0;
 }
 
 button{
@@ -53,6 +54,23 @@ button{
     font-style: italic;
     color: #1f2937
 }
+div.quote-text{
+    width: 70vw;
+}
+
+.quote-author{
+    font-weight: 800;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 8px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+}
 
 ul{
     list-style: none;
@@ -63,20 +81,46 @@ ul{
 
 .main-text{
     display: flex;
-    padding-bottom: 32px;
 }
 .left-side{
     flex: 1;
+    margin-right: 16px;
 }
 .right-side{
     flex: 1;
     background-color: #696969;
     width: 100%;
     height: auto;
+    margin-left: 16px;
 }
 .image{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.box{
+    width: 100%;
+    padding-top: 100%;
+    border: 3px blue solid;
+    border-radius: 10%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    gap: 32px;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    flex-basis: 10vw;
 }
